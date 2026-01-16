@@ -1,45 +1,62 @@
-# Projeto-Secureloganalyzer-webhook-n8n
-Integração com n8n + Alertas Automáticos
+# 🔐 SecureLog Analyzer
 
-# 🔐 SecureLog Analyzer  
-### Automated Security Log Monitoring & Alerting Tool
-
-Ferramenta desenvolvida em **Python** para análise automatizada de logs de autenticação, com foco em **Segurança da Informação**, **detecção de incidentes** e **resposta automatizada**, integrada ao **n8n via webhook**.
+Projeto de **Segurança da Informação e Automação**, desenvolvido em **Python**, com foco na **análise automatizada de logs de autenticação**, detecção de atividades suspeitas e geração de alertas para ambientes corporativos.
 
 ---
 
-## 📌 Visão Geral
-O **SecureLog Analyzer** atua como um analisador de logs defensivo (Blue Team), identificando padrões suspeitos de autenticação, como tentativas de força bruta, acessos inválidos e comportamentos anômalos.
+## 🎯 Objetivo
 
-O projeto simula, em menor escala, funcionalidades encontradas em soluções **SIEM/SOAR**, aplicando automação e alertas em tempo quase real.
-
----
-
-## 🎯 Objetivos do Projeto
-- Automatizar a análise de logs de autenticação (SSH)
-- Detectar possíveis incidentes de segurança
-- Classificar ameaças por nível de risco
-- Gerar relatórios de segurança
-- Integrar alertas automatizados via webhook (n8n)
+Simular práticas utilizadas em ambientes de **SOC / SIEM / SOAR**, automatizando a identificação de comportamentos anômalos em logs de autenticação e reduzindo a necessidade de análise manual.
 
 ---
 
-## 🛡 Escopo de Segurança
-- Monitoramento contínuo
-- Detecção de incidentes
-- Resposta automatizada
-- Observabilidade
-- Automação defensiva (Blue Team)
+## 🧠 Como funciona
+
+1. O sistema recebe arquivos de **logs de autenticação**
+2. Realiza a análise automática dos eventos
+3. Identifica padrões suspeitos, como:
+   - Tentativas repetidas de login
+   - Possível força bruta
+4. Classifica o nível de risco
+5. Gera alertas automáticos
+6. Envia notificações via **webhook**, integrando com ferramentas como **n8n**
 
 ---
 
-## 🧠 Casos de Uso
-- Monitoramento de servidores Linux
-- Detecção de ataques de força bruta
-- Apoio a times de SOC
-- Automação de alertas de segurança
-- Portfólio técnico em Segurança da Informação
+## ⚙️ Tecnologias Utilizadas
+- **Python**
+- **Regex**
+- **Automação de processos**
+- **Webhooks**
+- **n8n**
+- Conceitos de **Segurança da Informação**
 
 ---
 
-## ⚙️ Arquitetura da Solução
+## 📌 Funcionalidades
+- ✔️ Análise de logs de autenticação
+- ✔️ Detecção de força bruta
+- ✔️ Classificação de risco
+- ✔️ Geração de relatórios
+- ✔️ Integração via webhook
+- ✔️ Simulação de ambiente SOC
+
+---
+
+## 🖥️ Demonstração
+
+![SecureLog Analyzer Demo](assets/securelog-demo.gif)
+
+---
+
+## 🚀 Como executar
+
+```bash
+# Clone o repositório
+git clone https://github.com/gabrieltrisi/securelog-analyzer.git
+
+# Acesse o diretório
+cd securelog-analyzer
+
+# Execute o script
+python securelog_analyzer.py
